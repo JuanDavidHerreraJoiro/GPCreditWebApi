@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Authentication\Sesion\Queries\" />
+    <Folder Include="Features\Employees\Commands\" />
+    <Folder Include="Features\Employees\Queries\" />
+    <Folder Include="Features\Loans\ApprovedLoan\Commands\" />
+    <Folder Include="Features\Loans\ApprovedLoan\Queries\" />
+    <Folder Include="Features\Loans\Request\Commands\" />
+    <Folder Include="Features\Loans\Request\Queries\" />
+    <Folder Include="Features\Payments\Commands\" />
+    <Folder Include="Features\Payments\Queries\" />
+    <Folder Include="Features\Reports\Queries\" />
+    <Folder Include="Features\Routes\Commands\" />
+    <Folder Include="Features\Routes\Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.5.2" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.2" />
+    <PackageReference Include="MediatR" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+</Project>
